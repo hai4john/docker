@@ -21,7 +21,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	    libjpeg-dev \
 	    libpng-dev \
 	    libtiff-dev \
-	    zlib1g-dev && \
+	    zlib1g-dev \
+	    webp && \
 	pip3 install --upgrade pip && pip3 install --upgrade virtualenv
 
 RUN mkdir -p ~/opencv cd ~/opencv && \
