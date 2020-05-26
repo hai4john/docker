@@ -32,7 +32,7 @@ RUN mkdir -p ~/opencv cd ~/opencv && \
 	cd OpenCV && \
 	mkdir build && \
 	cd build && \
-	cmake && \
+	cmake -D CMAKE_INSTALL_TYPE=Release ..&& \
 	make -j4 && \
 	make install && \
 	ldconfig
