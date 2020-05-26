@@ -32,7 +32,7 @@ RUN mkdir -p ~/opencv cd ~/opencv && \
 	cd OpenCV && \
 	mkdir build && \
 	cd build && \
-	cmake -D CMAKE_INSTALL_TYPE=Release ..&& \
+	cmake -D CMAKE_INSTALL_TYPE=Release -DCUDA_nppi_LIBRARY=true .. && \
 	make -j4 && \
 	make install && \
 	ldconfig
