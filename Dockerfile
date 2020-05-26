@@ -21,6 +21,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	    libjpeg-dev \
 	    libpng-dev \
 	    libtiff-dev \
+	    libjasper-dev \
+	    libgtk2.0-dev \
+	    libatlas-base-dev \
+	    ffmpeg \
+    	gfortran \
 	    zlib1g-dev \
 	    webp && \
 	pip3 install --upgrade pip && pip3 install --upgrade virtualenv
