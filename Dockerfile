@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	    cmake \
 	    git \
 	    unzip \
+	    vim \
 	    pkg-config \
 	    openssh-server \
 	    net-tools \
